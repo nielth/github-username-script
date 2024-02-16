@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  github-script:
+    build: .
+    container_name: github-script
+    volumes:
+      - ./backend:/api
+    restart: always
